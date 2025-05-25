@@ -35,6 +35,7 @@ pytest_cache/
 .ipynb_checkpoints/
 
 *.db
+*.pdf
 
 task_*.html
 practice_*.html
