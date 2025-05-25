@@ -23,7 +23,6 @@ literary_type['novel'] = fuzz.trimf(literary_type.universe, [0.7, 0.9, 1.0])
 literary_type['poema'] = fuzz.trimf(literary_type.universe, [0.7, 0.9, 1.0])
 literary_type['play'] = fuzz.trimf(literary_type.universe, [0.7, 0.9, 1.0])
 
-# Правила (используем исправленные названия функций принадлежности)
 rules = [
     ctrl.Rule(poetic_rhythm['high'] & line_breaks['high'] & short_length['high'], literary_type['poem']),
     ctrl.Rule(poetic_rhythm['high'] & line_breaks['high'] & rhyme['high'], literary_type['poem']),
