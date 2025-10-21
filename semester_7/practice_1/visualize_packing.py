@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-from units import byte2gb
 
 
 def visualize_disk_usage(
@@ -9,21 +8,20 @@ def visualize_disk_usage(
     Визуализирует загрузку каждого диска в лучшем решении.
 
     :param best_ind: список — назначение файлов на диски
-    :param files: массив размеров файлов (в байтах)
-    :param disk_capacity: ёмкость диска (в байтах)
+    :param files: массив размеров файлов (в гигабайтах)
+    :param disk_capacity: ёмкость диска (в гигабайтах)
     """
     disk_usage = {}
     for file_idx, disk in enumerate(best_ind):
         disk_usage[disk] = disk_usage.get(disk, 0) + files[file_idx]
 
     disk_ids = sorted(disk_usage.keys())
-    used_space_gb = [byte2gb(disk_usage[d]) for d in disk_ids]
-    capacity_gb = byte2gb(disk_capacity)
+    used_space = [disk_usage[d] for d in disk_ids]
 
     plt.figure(figsize=(8, 5))
-    bars = plt.bar(disk_ids, used_space_gb, color="skyblue", edgecolor="black")
+    bars = plt.bar(disk_ids, used_space, color="skyblue", edgecolor="black")
     plt.axhline(
-        capacity_gb, color="red", linestyle="--", linewidth=2, label="Ёмкость диска"
+        disk_capacity, color="red", linestyle="--", linewidth=2, label="Ёмкость диска"
     )
 
     plt.title("Загрузка дисков в лучшем решении", fontsize=14)
@@ -32,7 +30,7 @@ def visualize_disk_usage(
     plt.legend(fontsize=10)
     plt.grid(True, linestyle="--", alpha=0.7)
 
-    for bar, val in zip(bars, used_space_gb):
+    for bar, val in zip(bars, used_space):
         plt.text(
             bar.get_x() + bar.get_width() / 2,
             val + 2,

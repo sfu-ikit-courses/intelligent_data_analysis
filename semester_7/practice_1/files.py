@@ -3,15 +3,14 @@ import random
 import matplotlib.pyplot as plt
 from deap import base, creator, tools, algorithms
 
-from units import gb2byte, tb2byte
 from visualize_packing import visualize_disk_usage
 
 FILE_TOTAL = 300
-FILE_LOW_SIZE = gb2byte(1)
-FILE_UP_SIZE = gb2byte(100)
+FILE_LOW_SIZE = 1  # 1 gb
+FILE_UP_SIZE = 100  # 100 gb
 
 DISK_TOTAL = 25
-DISK_CAPACITY = tb2byte(2)
+DISK_CAPACITY = 2 * 1024  # 2 tb
 
 RANDOM_SEED = 42
 random.seed(RANDOM_SEED)
@@ -35,14 +34,13 @@ toolbox.register("populationCreator", tools.initRepeat, list, toolbox.individual
 
 
 def fitness(individual):
+
     disk_usage = {}
-    penalty = 0
     for file_idx, disk in enumerate(individual):
         disk_usage[disk] = disk_usage.get(disk, 0) + files[file_idx]
-        if disk_usage[disk] > DISK_CAPACITY:
-            penalty += disk_usage[disk] - DISK_CAPACITY
-    used_disks = len([d for d in disk_usage if disk_usage[d] > 0])
-    return (used_disks + penalty / DISK_CAPACITY,)
+
+    max_usage = max(disk_usage.values()) if disk_usage else 0
+    return (max_usage,)
 
 
 toolbox.register("evaluate", fitness)
@@ -74,7 +72,7 @@ def run_ga(generations=50, population_size=50, cx_prob=0.7, mut_prob=0.2):
 
 best_ind, best_fit, log = run_ga(generations=100, population_size=200)
 print("Лучшее распределение:", best_ind)
-print("Использовано дисков:", best_fit)
+print("Максимальная загрузка диска (ГБ):", round(best_fit, 3))
 
 minFitnessValues, meanFitnessValues = log.select("min", "avg")
 
