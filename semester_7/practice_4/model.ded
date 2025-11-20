@@ -1,0 +1,3566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+	<Version>
+		<Comments>Аналитическая платформа Deductor</Comments>
+		<CompanyName>BaseGroup Labs</CompanyName>
+		<FileDescription>Deductor Studio</FileDescription>
+		<FileVersion>5.3.0.88</FileVersion>
+		<InternalName>Studio</InternalName>
+		<LegalCopyright>© BaseGroup Labs 1998-2016</LegalCopyright>
+		<LegalTrademarks>BASEGROUP</LegalTrademarks>
+		<OriginalFilename>DStudio.exe</OriginalFilename>
+		<ProductName>Deductor Academic</ProductName>
+		<ProductVersion>5.3</ProductVersion>
+	</Version>
+	<Properties>
+		<Author>Artem Poleshko</Author>
+		<DisplayName>model</DisplayName>
+	</Properties>
+	<EnvironmentVariables>
+		<Version>1</Version>
+		<Vars>
+			<Count>2</Count>
+			<I_0>
+				<Name>LocaleID</Name>
+				<DataType>dtInteger</DataType>
+				<Value>1049</Value>
+			</I_0>
+			<I_1>
+				<Name>DisableFloatExceptions</Name>
+				<DataType>dtBoolean</DataType>
+			</I_1>
+		</Vars>
+	</EnvironmentVariables>
+	<Script>
+		<NodeCount>3</NodeCount>
+		<Root>
+			<DisplayName>Сценарии</DisplayName>
+			<NodeIndex>1</NodeIndex>
+			<SubNodes>
+				<Count>1</Count>
+				<I_0>
+					<ID>1</ID>
+					<VendorName>TBGTextFileVendor</VendorName>
+					<Name>output</Name>
+					<DisplayName>Текстовый файл (D:\sfu\иад\7_4\ЛР8_Районы.txt)</DisplayName>
+					<NodeIndex>2</NodeIndex>
+					<Component>
+						<Version>1</Version>
+						<ElapsedTime>16</ElapsedTime>
+						<StartTime>2025.11.19 23:46:59</StartTime>
+						<StopTime>2025.11.19 23:46:59</StopTime>
+						<ElapsedTimeFmt>00:00:00.016</ElapsedTimeFmt>
+						<StoppedByUser>1</StoppedByUser>
+						<FileName>D:\sfu\иад\7_4\ЛР8_Районы.txt</FileName>
+						<CharSet>chrANSI</CharSet>
+						<FixedFormat>0</FixedFormat>
+						<DecimalPoint>,</DecimalPoint>
+						<DateFormat>dd.MM.yyyy</DateFormat>
+						<TimeFormat>h:mm</TimeFormat>
+						<ValueTrue>true</ValueTrue>
+						<ValueFalse>false</ValueFalse>
+						<ValueNull>?</ValueNull>
+						<Columns>
+							<Count>5</Count>
+							<I_0>
+								<ID>1</ID>
+								<Name>COL1</Name>
+								<DisplayName>Район</DisplayName>
+								<DataKind>dkDiscrete</DataKind>
+								<DataStatus>dsInfo</DataStatus>
+								<DataType>dtString</DataType>
+							</I_0>
+							<I_1>
+								<ID>2</ID>
+								<Name>COL2</Name>
+								<DisplayName>Оплата</DisplayName>
+								<DataKind>dkContinuous</DataKind>
+								<DataStatus>dsInput</DataStatus>
+								<DataType>dtFloat</DataType>
+							</I_1>
+							<I_2>
+								<ID>3</ID>
+								<Name>COL3</Name>
+								<DisplayName>Долг</DisplayName>
+								<DataKind>dkContinuous</DataKind>
+								<DataStatus>dsInput</DataStatus>
+								<DataType>dtFloat</DataType>
+							</I_2>
+							<I_3>
+								<ID>4</ID>
+								<Name>COL4</Name>
+								<DisplayName>Недопоставки</DisplayName>
+								<DataKind>dkContinuous</DataKind>
+								<DataStatus>dsInput</DataStatus>
+								<DataType>dtFloat</DataType>
+							</I_3>
+							<I_4>
+								<ID>5</ID>
+								<Name>COL5</Name>
+								<DisplayName>Субсидии</DisplayName>
+								<DataKind>dkContinuous</DataKind>
+								<DataStatus>dsInput</DataStatus>
+								<DataType>dtFloat</DataType>
+							</I_4>
+						</Columns>
+					</Component>
+					<Views>
+						<Count>2</Count>
+						<I_0>
+							<ID>1</ID>
+							<Name>TBGBrowseVendor</Name>
+							<VendorName>TBGBrowseVendor</VendorName>
+							<BrowseColumns>
+								<Columns>
+									<Count>5</Count>
+									<I_0>
+										<ID>1</ID>
+										<Name>COL1</Name>
+										<DataStatus>dsUsable</DataStatus>
+										<DataType>dtString</DataType>
+										<Width>128</Width>
+									</I_0>
+									<I_1>
+										<ID>2</ID>
+										<Name>COL2</Name>
+										<DataStatus>dsUsable</DataStatus>
+										<DataType>dtFloat</DataType>
+										<Alignment>taRightJustify</Alignment>
+										<Width>80</Width>
+									</I_1>
+									<I_2>
+										<ID>3</ID>
+										<Name>COL3</Name>
+										<DataStatus>dsUsable</DataStatus>
+										<DataType>dtFloat</DataType>
+										<Alignment>taRightJustify</Alignment>
+										<Width>80</Width>
+									</I_2>
+									<I_3>
+										<ID>4</ID>
+										<Name>COL4</Name>
+										<DataStatus>dsUsable</DataStatus>
+										<DataType>dtFloat</DataType>
+										<Alignment>taRightJustify</Alignment>
+										<Width>96</Width>
+									</I_3>
+									<I_4>
+										<ID>5</ID>
+										<Name>COL5</Name>
+										<DataStatus>dsUsable</DataStatus>
+										<DataType>dtFloat</DataType>
+										<Alignment>taRightJustify</Alignment>
+										<Width>80</Width>
+									</I_4>
+								</Columns>
+							</BrowseColumns>
+							<FilterColumns/>
+							<VirtualDataSet>
+								<SortComponent>
+									<StartTime>2025.11.19 23:47:28</StartTime>
+									<StopTime>2025.11.19 23:47:28</StopTime>
+									<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+								</SortComponent>
+							</VirtualDataSet>
+							<Statistics>
+								<Histogram>1</Histogram>
+								<StatMin>1</StatMin>
+								<StatMax>1</StatMax>
+								<StatAvg>1</StatAvg>
+								<StatStdDev>1</StatStdDev>
+								<StatSum>1</StatSum>
+								<StatSumSq>1</StatSumSq>
+								<StatUnique>1</StatUnique>
+								<StatNull>1</StatNull>
+								<StatColumns>
+									<Columns>
+										<Count>5</Count>
+										<I_0>
+											<ID>1</ID>
+											<Name>COL1</Name>
+											<DataStatus>dsInfo</DataStatus>
+											<DataType>dtString</DataType>
+										</I_0>
+										<I_1>
+											<ID>2</ID>
+											<Name>COL2</Name>
+											<DataStatus>dsInfo</DataStatus>
+											<DataType>dtFloat</DataType>
+										</I_1>
+										<I_2>
+											<ID>3</ID>
+											<Name>COL3</Name>
+											<DataStatus>dsInfo</DataStatus>
+											<DataType>dtFloat</DataType>
+										</I_2>
+										<I_3>
+											<ID>4</ID>
+											<Name>COL4</Name>
+											<DataStatus>dsInfo</DataStatus>
+											<DataType>dtFloat</DataType>
+										</I_3>
+										<I_4>
+											<ID>5</ID>
+											<Name>COL5</Name>
+											<DataStatus>dsInfo</DataStatus>
+											<DataType>dtFloat</DataType>
+										</I_4>
+									</Columns>
+								</StatColumns>
+							</Statistics>
+						</I_0>
+						<I_1>
+							<ID>2</ID>
+							<Name>TBGDataStatVendor</Name>
+							<VendorName>TBGDataStatVendor</VendorName>
+							<Histogram>1</Histogram>
+							<StatMin>1</StatMin>
+							<StatMax>1</StatMax>
+							<StatAvg>1</StatAvg>
+							<StatStdDev>1</StatStdDev>
+							<StatSum>1</StatSum>
+							<StatSumSq>1</StatSumSq>
+							<StatUnique>1</StatUnique>
+							<StatNull>1</StatNull>
+							<StatColumns>
+								<Columns>
+									<Count>5</Count>
+									<I_0>
+										<ID>1</ID>
+										<Name>COL1</Name>
+										<DataStatus>dsInfo</DataStatus>
+										<DataType>dtString</DataType>
+									</I_0>
+									<I_1>
+										<ID>2</ID>
+										<Name>COL2</Name>
+										<DataStatus>dsInput</DataStatus>
+										<DataType>dtFloat</DataType>
+									</I_1>
+									<I_2>
+										<ID>3</ID>
+										<Name>COL3</Name>
+										<DataStatus>dsInput</DataStatus>
+										<DataType>dtFloat</DataType>
+									</I_2>
+									<I_3>
+										<ID>4</ID>
+										<Name>COL4</Name>
+										<DataStatus>dsInput</DataStatus>
+										<DataType>dtFloat</DataType>
+									</I_3>
+									<I_4>
+										<ID>5</ID>
+										<Name>COL5</Name>
+										<DataStatus>dsInput</DataStatus>
+										<DataType>dtFloat</DataType>
+									</I_4>
+								</Columns>
+							</StatColumns>
+						</I_1>
+					</Views>
+					<SubNodes>
+						<Count>1</Count>
+						<I_0>
+							<ID>1</ID>
+							<VendorName>TBGSOMComponentVendor</VendorName>
+							<Name>SOMComponent</Name>
+							<DisplayName>Самоорганизующаяся карта [16; 12]</DisplayName>
+							<NodeIndex>3</NodeIndex>
+							<Component>
+								<AnalyticEngine>
+									<TunedDataSource>
+										<Columns>
+											<Count>5</Count>
+											<I_0>
+												<ID>1</ID>
+												<Name>COL1</Name>
+												<DisplayName>Район</DisplayName>
+												<DataKind>dkDiscrete</DataKind>
+												<DataStatus>dsInfo</DataStatus>
+												<DataType>dtString</DataType>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<Name>COL2</Name>
+												<DisplayName>Оплата</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_1>
+											<I_2>
+												<ID>3</ID>
+												<Name>COL3</Name>
+												<DisplayName>Долг</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_2>
+											<I_3>
+												<ID>4</ID>
+												<Name>COL4</Name>
+												<DisplayName>Недопоставки</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_3>
+											<I_4>
+												<ID>5</ID>
+												<Name>COL5</Name>
+												<DisplayName>Субсидии</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_4>
+										</Columns>
+										<Statistics>
+											<Version>4</Version>
+											<StartTime>2025.11.19 23:49:06</StartTime>
+											<StopTime>2025.11.19 23:49:06</StopTime>
+											<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+											<StoppedByUser>1</StoppedByUser>
+											<RowCount>44</RowCount>
+											<Items>
+												<Count>5</Count>
+												<I_0>
+													<ID>1</ID>
+													<Name>COL1</Name>
+													<DisplayName>Район</DisplayName>
+													<DataKind>dkDiscrete</DataKind>
+													<DataStatus>dsInfo</DataStatus>
+													<DataType>dtString</DataType>
+												</I_0>
+												<I_1>
+													<ID>2</ID>
+													<Name>COL2</Name>
+													<DisplayName>Оплата</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsInput</DataStatus>
+													<DataType>dtFloat</DataType>
+													<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+													<Max>1.56</Max>
+													<Avg>0.815454545454545</Avg>
+													<Sum>35.88</Sum>
+													<SumSq>32.8598</SumSq>
+													<StdDev>0.289397566289365</StdDev>
+													<SKO>0.286090056907187</SKO>
+												</I_1>
+												<I_2>
+													<ID>3</ID>
+													<Name>COL3</Name>
+													<DisplayName>Долг</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsInput</DataStatus>
+													<DataType>dtFloat</DataType>
+													<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+													<Min>1.24</Min>
+													<Max>8.2</Max>
+													<Avg>3.00840909090909</Avg>
+													<Sum>132.37</Sum>
+													<SumSq>484.6677</SumSq>
+													<StdDev>1.41786433434695</StdDev>
+													<SKO>1.40165963833433</SKO>
+												</I_2>
+												<I_3>
+													<ID>4</ID>
+													<Name>COL4</Name>
+													<DisplayName>Недопоставки</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsInput</DataStatus>
+													<DataType>dtFloat</DataType>
+													<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+													<Max>0.29</Max>
+													<Avg>0.0272113636363636</Avg>
+													<Sum>1.1973</Sum>
+													<SumSq>0.15725985</SumSq>
+													<StdDev>0.0538472612328919</StdDev>
+													<SKO>0.0532318437502364</SKO>
+												</I_3>
+												<I_4>
+													<ID>5</ID>
+													<Name>COL5</Name>
+													<DisplayName>Субсидии</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsInput</DataStatus>
+													<DataType>dtFloat</DataType>
+													<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+													<Min>0.21</Min>
+													<Max>1.91</Max>
+													<Avg>1.0675</Avg>
+													<Sum>46.97</Sum>
+													<SumSq>56.5689</SumSq>
+													<StdDev>0.386650043080242</StdDev>
+													<SKO>0.382231040317002</SKO>
+												</I_4>
+											</Items>
+										</Statistics>
+										<Normalizers>
+											<Count>5</Count>
+											<I_0>
+												<ID>1</ID>
+												<Name>COL1</Name>
+												<DisplayName>Район</DisplayName>
+												<NormalizerVendor>TBGUnUsableColumnNormalizerVendor</NormalizerVendor>
+												<Normalizer/>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<Name>COL2</Name>
+												<DisplayName>Оплата</DisplayName>
+												<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+												<Normalizer>
+													<Version>1</Version>
+													<NormColumns>
+														<Count>1</Count>
+														<I_0>
+															<Name>COL2</Name>
+															<DisplayName>Оплата</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsInput</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_0>
+													</NormColumns>
+													<LinearNormalizer>
+														<Enabled>1</Enabled>
+														<Max>1</Max>
+													</LinearNormalizer>
+												</Normalizer>
+											</I_1>
+											<I_2>
+												<ID>3</ID>
+												<Name>COL3</Name>
+												<DisplayName>Долг</DisplayName>
+												<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+												<Normalizer>
+													<Version>1</Version>
+													<NormColumns>
+														<Count>1</Count>
+														<I_0>
+															<Name>COL3</Name>
+															<DisplayName>Долг</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsInput</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_0>
+													</NormColumns>
+													<LinearNormalizer>
+														<Enabled>1</Enabled>
+														<Max>1</Max>
+													</LinearNormalizer>
+												</Normalizer>
+											</I_2>
+											<I_3>
+												<ID>4</ID>
+												<Name>COL4</Name>
+												<DisplayName>Недопоставки</DisplayName>
+												<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+												<Normalizer>
+													<Version>1</Version>
+													<NormColumns>
+														<Count>1</Count>
+														<I_0>
+															<Name>COL4</Name>
+															<DisplayName>Недопоставки</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsInput</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_0>
+													</NormColumns>
+													<LinearNormalizer>
+														<Enabled>1</Enabled>
+														<Max>1</Max>
+													</LinearNormalizer>
+												</Normalizer>
+											</I_3>
+											<I_4>
+												<ID>5</ID>
+												<Name>COL5</Name>
+												<DisplayName>Субсидии</DisplayName>
+												<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+												<Normalizer>
+													<Version>1</Version>
+													<NormColumns>
+														<Count>1</Count>
+														<I_0>
+															<Name>COL5</Name>
+															<DisplayName>Субсидии</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsInput</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_0>
+													</NormColumns>
+													<LinearNormalizer>
+														<Enabled>1</Enabled>
+														<Max>1</Max>
+													</LinearNormalizer>
+												</Normalizer>
+											</I_4>
+										</Normalizers>
+									</TunedDataSource>
+									<Kernel>
+										<State>ksTrained</State>
+										<CaseCount>44</CaseCount>
+										<ClustersCount>8</ClustersCount>
+										<SignificanceLevel>0.001</SignificanceLevel>
+										<InputColumns>
+											<Count>4</Count>
+											<I_0>
+												<ID>1</ID>
+												<Name>COL2</Name>
+												<DisplayName>Оплата</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+												<NormalizerIndex>2</NormalizerIndex>
+												<NormColumnIndex>1</NormColumnIndex>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<Name>COL3</Name>
+												<DisplayName>Долг</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+												<NormalizerIndex>3</NormalizerIndex>
+												<NormColumnIndex>1</NormColumnIndex>
+											</I_1>
+											<I_2>
+												<ID>3</ID>
+												<Name>COL4</Name>
+												<DisplayName>Недопоставки</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+												<NormalizerIndex>4</NormalizerIndex>
+												<NormColumnIndex>1</NormColumnIndex>
+											</I_2>
+											<I_3>
+												<ID>4</ID>
+												<Name>COL5</Name>
+												<DisplayName>Субсидии</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+												<NormalizerIndex>5</NormalizerIndex>
+												<NormColumnIndex>1</NormColumnIndex>
+											</I_3>
+										</InputColumns>
+										<AdditionalColumns>
+											<Count>4</Count>
+											<I_0>
+												<ID>1</ID>
+												<Name>SOMCELLNUMBER</Name>
+												<DisplayName>Номер ячейки</DisplayName>
+												<DataKind>dkDiscrete</DataKind>
+												<DataStatus>dsOutput</DataStatus>
+												<DataType>dtInteger</DataType>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<Name>SOMCELLDISTANCE</Name>
+												<DisplayName>Расстояние до центра ячейки</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsOutput</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_1>
+											<I_2>
+												<ID>3</ID>
+												<Name>SOMCLUSTERNUMBER</Name>
+												<DisplayName>Номер кластера</DisplayName>
+												<DataKind>dkDiscrete</DataKind>
+												<DataStatus>dsOutput</DataStatus>
+												<DataType>dtInteger</DataType>
+											</I_2>
+											<I_3>
+												<ID>4</ID>
+												<Name>SOMCLUSTERDISTANCE</Name>
+												<DisplayName>Расстояние до центра кластера</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsOutput</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_3>
+										</AdditionalColumns>
+										<Nodes>
+											<Count>192</Count>
+											<I_0>
+												<ID>1</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>8.72747977601021E-11</ErrorAvg>
+												<ErrorMax>8.72747977601021E-11</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.474358974367186;0.999999999959843;0.999999999923098;0.482352941181266</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.474376468042844;0.999914451029135;0.999836173704321;0.482363156707781</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_1>
+											<I_2>
+												<ID>3</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.54526152132487;0.655764362241405;0.340266469120929;0.522752658111393</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_2>
+											<I_3>
+												<ID>4</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.749949109341489;0.579041880535813;8.42657068987713E-5;0.270650987952309</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_3>
+											<I_4>
+												<ID>5</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>5.33774782242599E-8</ErrorAvg>
+												<ErrorMax>5.33774782242599E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.749999976892362;0.579022944851691;1.98293242694048E-8;0.270588239333114</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_4>
+											<I_5>
+												<ID>6</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.749412650350134;0.577912529216178;0.000504112128752901;0.270691585645371</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_5>
+											<I_6>
+												<ID>7</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.608970216639306;0.235648750012216;0.230630103846025;0.335288180793143</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_6>
+											<I_7>
+												<ID>8</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>2.5612392126189E-8</ErrorAvg>
+												<ErrorMax>2.5612392126189E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.608974353974569;0.235632183426063;0.23068963011169;0.335294119297677</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_7>
+											<I_8>
+												<ID>9</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.615457729857099;0.226181717064915;0.230339083860309;0.388855071718379</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_8>
+											<I_9>
+												<ID>10</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>1.90809698871479E-8</ErrorAvg>
+												<ErrorMax>1.90809698871479E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.621794861634963;0.216954018429881;0.229999997677201;0.441176455268861</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_9>
+											<I_10>
+												<ID>11</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.550822683499758;0.137416122652439;0.301720476558396;0.62260309800472</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_10>
+											<I_11>
+												<ID>12</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.555088163243105;0.115805595018795;0.325164635330748;0.674111523026767</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_11>
+											<I_12>
+												<ID>13</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>1.31484180156959E-7</ErrorAvg>
+												<ErrorMax>1.31484180156959E-7</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.64743580671846;0.113505770961165;0.343103356361577;0.688235287628727</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_12>
+											<I_13>
+												<ID>14</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.737054416385397;0.124667849967013;0.169026092341861;0.7643753054319</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_13>
+											<I_14>
+												<ID>15</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>8.36596490400126E-7</ErrorAvg>
+												<ErrorMax>8.36596490400126E-7</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.820512023893188;0.135057255744454;0.00689652066696179;0.835293983940415</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_14>
+											<I_15>
+												<ID>16</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>7.43739916455258E-5</ErrorAvg>
+												<ErrorMax>7.43739916455258E-5</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.641021795096786;0.086150098839064;5.45501777537355E-7;0.805930211291847</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_15>
+											<I_16>
+												<ID>17</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.474381734914774;0.999888693819551;0.999786849088469;0.482366232417754</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_16>
+											<I_17>
+												<ID>18</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.544845974902389;0.655298680738536;0.339896973612128;0.523514334002979</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_17>
+											<I_18>
+												<ID>19</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.544946907517936;0.655144529842171;0.339530799470168;0.523436791244244</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_18>
+											<I_19>
+												<ID>20</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.749928151415734;0.578983473575623;9.56108289128458E-5;0.270645842596278</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_19>
+											<I_20>
+												<ID>21</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.684831037041505;0.455908223128832;0.0559233170209531;0.281979113156372</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_20>
+											<I_21>
+												<ID>22</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.615417134135082;0.324756228428701;0.115513235417065;0.294121575363636</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_21>
+											<I_22>
+												<ID>23</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.608934716685354;0.235578534770766;0.230513579466168;0.335328874054438</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_22>
+											<I_23>
+												<ID>24</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.57793456821461;0.197367609538399;0.201302463245569;0.352384276696322</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_23>
+											<I_24>
+												<ID>25</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.58390057805701;0.187226608056889;0.200442452413352;0.406402866477536</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_24>
+											<I_25>
+												<ID>26</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.603412074235548;0.196352542322322;0.248576575032589;0.488168467441928</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_25>
+											<I_26>
+												<ID>27</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>1.45680565317327E-7</ErrorAvg>
+												<ErrorMax>1.45680565317327E-7</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.532051426541437;0.116379318495222;0.320689670884834;0.670588229627275</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_26>
+											<I_27>
+												<ID>28</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.622702996030045;0.114121752266701;0.338298873538845;0.684452616726867</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_27>
+											<I_28>
+												<ID>29</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.826317803986659;0.187133314481634;0.169896357750655;0.718080855757712</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_28>
+											<I_29>
+												<ID>30</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.911579920228323;0.197750229063687;0.00427220201546049;0.790525816290427</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_29>
+											<I_30>
+												<ID>31</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.721952565025306;0.103190245824455;0.00317220995074736;0.823528976134005</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_30>
+											<I_31>
+												<ID>32</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>7.99437021940905E-5</ErrorAvg>
+												<ErrorMax>7.99437021940905E-5</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.615403116362267;6.22019053320441E-5;2.84369351042588E-12;0.87054154876159</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_31>
+											<I_32>
+												<ID>33</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.43803610531978;0.73132201315627;0.780654936734724;0.49624219859769</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_32>
+											<I_33>
+												<ID>34</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.544834836725922;0.655207447200921;0.339818624286486;0.523519288693746</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_33>
+											<I_34>
+												<ID>35</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>2.13293188641759E-11</ErrorAvg>
+												<ErrorMax>2.13293188641759E-11</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.544871794860989;0.655172413782814;0.339655172413758;0.523529411749465</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_34>
+											<I_35>
+												<ID>36</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.544929736761296;0.655150211474392;0.339558320150631;0.523457701628791</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_35>
+											<I_36>
+												<ID>37</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.616039649974027;0.325950185582877;0.114955131562215;0.294003193367856</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_36>
+											<I_37>
+												<ID>38</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>5.54306044780489E-8</ErrorAvg>
+												<ErrorMax>5.54306044780489E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.615384608667817;0.324712597304657;0.115517250577871;0.294117675207023</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_37>
+											<I_38>
+												<ID>39</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.59486289615858;0.231568807226542;0.138699707556289;0.341196884577324</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_38>
+											<I_39>
+												<ID>40</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.580773539839972;0.197993533002399;0.149584891483387;0.356468775658154</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_39>
+											<I_40>
+												<ID>41</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>4.24643674884554E-8</ErrorAvg>
+												<ErrorMax>4.24643674884554E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.544871823348927;0.156609222680976;0.169999988792077;0.370588224224714</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_40>
+											<I_41>
+												<ID>42</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.545498871693433;0.156480252633782;0.169980840595982;0.370480399651261</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_41>
+											<I_42>
+												<ID>43</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.532222398824677;0.116465974998168;0.320526911087494;0.670351865516968</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_42>
+											<I_43>
+												<ID>44</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.532345187688136;0.116695799578011;0.320440662096383;0.670781171912956</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_43>
+											<I_44>
+												<ID>45</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.998267276933482;0.257926737762223;0.00334107991663809;0.746799453919804</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_44>
+											<I_45>
+												<ID>46</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>1.36907082189303E-7</ErrorAvg>
+												<ErrorMax>1.36907082189303E-7</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.999999872572581;0.258620667783193;0.00172413952340833;0.74705886852811</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_45>
+											<I_46>
+												<ID>47</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.998149319092787;0.258418237095554;0.00178225603957082;0.748197309228473</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_46>
+											<I_47>
+												<ID>48</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.625723868641537;0.0550538498925411;0.000157103749371221;0.914846959944801</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_47>
+											<I_48>
+												<ID>49</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.39748988479879;0.431116556756607;0.535445521876021;0.511769013805239</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_48>
+											<I_49>
+												<ID>50</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.54482056247481;0.655098708461605;0.339706899199303;0.523523876997269</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_49>
+											<I_50>
+												<ID>51</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.544458542736484;0.65485979084436;0.338970895683569;0.52338720598521</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_50>
+											<I_51>
+												<ID>52</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.563573632505276;0.481966649143336;0.20829972071872;0.414540191246585</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_51>
+											<I_52>
+												<ID>53</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.615037509973915;0.324647384349106;0.115308635829191;0.294521004091578</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_52>
+											<I_53>
+												<ID>54</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.609888285002982;0.29976636104977;0.121725992848477;0.306726735625417</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_53>
+											<I_54>
+												<ID>55</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>2.74853748466758E-8</ErrorAvg>
+												<ErrorMax>2.74853748466758E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.589743583719021;0.208333356439678;0.14448275520959;0.352941163294411</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_54>
+											<I_55>
+												<ID>56</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.554478497578903;0.167682553172694;0.16453520423415;0.366809781017931</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_55>
+											<I_56>
+												<ID>57</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.606915667312753;0.112694296684061;0.142597102534788;0.325640043237616</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_56>
+											<I_57>
+												<ID>58</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.666643460942181;0.0704685294518699;0.116233939523484;0.282482709879356</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_57>
+											<I_58>
+												<ID>59</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.67287520596916;0.284207840186733;0.186042282933172;0.770364458598827</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_58>
+											<I_59>
+												<ID>60</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.673054026305103;0.284387757457008;0.18593738819343;0.770544441090347</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_59>
+											<I_60>
+												<ID>61</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.999181235419634;0.25878623821546;0.00173840415726496;0.747228803130304</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_60>
+											<I_61>
+												<ID>62</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.813727302076067;0.284803376718677;0.00783814469642533;0.871636745619459</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_61>
+											<I_62>
+												<ID>63</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.62454298400863;0.268356645409765;0.0111813366160546;0.994956376244173</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_62>
+											<I_63>
+												<ID>64</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>3.90430406858165E-7</ErrorAvg>
+												<ErrorMax>3.90430406858165E-7</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.634615333672481;0.109195129673286;0.000344827519931885;0.97647031343351</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_63>
+											<I_64>
+												<ID>65</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>4.05521634735688E-11</ErrorAvg>
+												<ErrorMax>4.05521634735688E-11</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.397435897453851;0.431034482785943;0.53551724135536;0.511764705883777</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_64>
+											<I_65>
+												<ID>66</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.397394710643355;0.431106307720251;0.535046667286973;0.511714893639234</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_65>
+											<I_66>
+												<ID>67</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.340113348079502;0.500279703441092;0.000612276131254021;0.453068418905516</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_66>
+											<I_67>
+												<ID>68</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.339773885159696;0.499936999107064;6.93448298518374E-6;0.452962889298903</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_67>
+											<I_68>
+												<ID>69</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.420905693847302;0.295743322316764;9.56581515328853E-12;0.513168772239756</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_68>
+											<I_69>
+												<ID>70</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.468007008239719;0.233176991569756;0.000207759676102307;0.441264270168031</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_69>
+											<I_70>
+												<ID>71</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.530006615830888;0.220313171228217;0.0736177878708289;0.396217968482729</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_70>
+											<I_71>
+												<ID>72</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.589604952020358;0.208195865769509;0.14395277105282;0.352901132812658</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_71>
+											<I_72>
+												<ID>73</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.665835604082897;0.0711011333205903;0.115534311028988;0.282807141285075</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_72>
+											<I_73>
+												<ID>74</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>2.80730788632375E-8</ErrorAvg>
+												<ErrorMax>2.80730788632375E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.666666646989278;0.0704023134523614;0.116206899193187;0.282352954619262</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_73>
+											<I_74>
+												<ID>75</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.669757990670957;0.173641867780466;0.149797864679283;0.517802740114213</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_74>
+											<I_75>
+												<ID>76</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>4.88360788738303E-9</ErrorAvg>
+												<ErrorMax>4.88360788738303E-9</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.673076921805257;0.284482757880447;0.18586206681713;0.770588231162657</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_75>
+											<I_76>
+												<ID>77</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.617660276321775;0.329649931507278;0.0397914318293286;0.812195172161943</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_76>
+											<I_77>
+												<ID>78</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.606685255155863;0.335493685793423;0.00302674204262952;0.861308386274484</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_77>
+											<I_78>
+												<ID>79</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>1.11397973861201E-7</ErrorAvg>
+												<ErrorMax>1.11397973861201E-7</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.621794864500439;0.311781572406802;0.0141379195357343;0.999999895737459</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_78>
+											<I_79>
+												<ID>80</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.586255124826125;0.109287534162743;0.0122994949950308;0.832794938419765</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_79>
+											<I_80>
+												<ID>81</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.397435069742709;0.431035472158635;0.53550955851833;0.511763861971611</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_80>
+											<I_81>
+												<ID>82</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.339788571304411;0.499946227419861;0.000417521127493804;0.4529870397457</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_81>
+											<I_82>
+												<ID>83</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>5.15525113906716E-9</ErrorAvg>
+												<ErrorMax>5.15525113906716E-9</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.33974359151283;0.499999995370214;4.42928108797747E-12;0.452941177888848</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_82>
+											<I_83>
+												<ID>84</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.405236018489534;0.334010568553694;1.48880587662738E-19;0.503794121081472</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_83>
+											<I_84>
+												<ID>85</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.432681562410724;0.276799132662897;1.13957987665993E-14;0.501278816231695</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_84>
+											<I_85>
+												<ID>86</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>3.77666660329659E-7</ErrorAvg>
+												<ErrorMax>3.77666660329659E-7</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.467948566517812;0.232758839027162;2.27687356175912E-9;0.441176738961737</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_85>
+											<I_86>
+												<ID>87</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.508254547644569;0.206785690917786;0.00189786689516847;0.381075093282437</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_86>
+											<I_87>
+												<ID>88</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.5193893989147;0.199574684611268;0.00241143624168493;0.364597962915607</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_87>
+											<I_88>
+												<ID>89</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.666373736277465;0.0706605942763127;0.115855473249969;0.282496814225874</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_88>
+											<I_89>
+												<ID>90</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.666537643157705;0.0706280965359436;0.116052039025911;0.282584925603149</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_89>
+											<I_90>
+												<ID>91</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.673070773712354;0.28440723891543;0.185831756237611;0.77040832566372</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_90>
+											<I_91>
+												<ID>92</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.65897893733063;0.295972148763989;0.14870416185682;0.781168942361407</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_91>
+											<I_92>
+												<ID>93</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>8.95850165360749E-8</ErrorAvg>
+												<ErrorMax>8.95850165360749E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.602564130845737;0.34195399140891;6.81351923054056E-8;0.823529451588681</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_92>
+											<I_93>
+												<ID>94</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.617948552319484;0.317812356931162;0.0113118508861771;0.964718119461743</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_93>
+											<I_94>
+												<ID>95</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.602558862143037;0.263431239972894;0.0163552389579938;0.928131378894824</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_94>
+											<I_95>
+												<ID>96</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>6.79621286561493E-7</ErrorAvg>
+												<ErrorMax>6.79621286561493E-7</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.53205153758995;0.0862070126785622;0.0244828706519081;0.664706491080012</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_95>
+											<I_96>
+												<ID>97</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.187680383608663;0.509897827203693;0.252877835292493;0.521077197409958</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_96>
+											<I_97>
+												<ID>98</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.309079300627306;0.502139035550377;0.0496084010628944;0.466495333261303</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_97>
+											<I_98>
+												<ID>99</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.339737007934369;0.499979632920108;4.59316898976101E-13;0.452947218916815</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_98>
+											<I_99>
+												<ID>100</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.356396429041042;0.457782600676843;5.68917546638596E-24;0.465874947454584</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_99>
+											<I_100>
+												<ID>101</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>8.88250046805294E-8</ErrorAvg>
+												<ErrorMax>8.88250046805294E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.423076899143198;0.28879317490895;1.65007877909249E-29;0.517647011808316</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_100>
+											<I_101>
+												<ID>102</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.458976979309357;0.243960139027068;1.18460118183985E-14;0.45646304326146</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_101>
+											<I_102>
+												<ID>103</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.478200752372496;0.226152253147507;0.000482553512531286;0.425888879490185</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_102>
+											<I_103>
+												<ID>104</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>1.6594109552476E-7</ErrorAvg>
+												<ErrorMax>1.6594109552476E-7</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.519230734604763;0.199712630529074;0.00241378014873183;0.364706043588061</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_103>
+											<I_104>
+												<ID>105</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.519649560838954;0.199349135625325;0.00239483163370702;0.36441811951147</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_104>
+											<I_105>
+												<ID>106</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.58351634981964;0.202292361814834;0.0119538490062566;0.399736990457198</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_105>
+											<I_106>
+												<ID>107</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.583288397580653;0.202721357523175;0.0117438555321073;0.400241035484495</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_106>
+											<I_107>
+												<ID>108</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.532305424714962;0.313166123970284;0.000334673529595004;0.565075750197904</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_107>
+											<I_108>
+												<ID>109</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.566643931196045;0.327315693432208;9.90011748663604E-9;0.691681345009193</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_108>
+											<I_109>
+												<ID>110</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.53725476155219;0.287792315451342;0.0158093619741442;0.763598456910268</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_109>
+											<I_110>
+												<ID>111</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.474663384886665;0.235126948595233;0.0309999404457631;0.70590759130093</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_110>
+											<I_111>
+												<ID>112</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.545063653727669;0.106622908186476;0.0740060523214181;0.652765140321993</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_111>
+											<I_112>
+												<ID>113</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>4.60838023327817E-6;0.580458662320297;2.44100470690946E-8;0.529410733599702</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_112>
+											<I_113>
+												<ID>114</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.153963357355034;0.43497376596984;1.5369179040564E-13;0.517432102391731</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_113>
+											<I_114>
+												<ID>115</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.27577017071381;0.302123596489278;3.35013676617621E-24;0.511646196440207</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_114>
+											<I_115>
+												<ID>116</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.351697600089573;0.295053329667999;1.67675998035739E-41;0.514798880428121</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_115>
+											<I_116>
+												<ID>117</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.377542219059568;0.243594892753691;3.3340137306244E-24;0.446016037116483</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_116>
+											<I_117>
+												<ID>118</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.333794390901915;0.199823676942423;3.66673286122624E-7;0.376687948806274</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_117>
+											<I_118>
+												<ID>119</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.519057494078397;0.199802586726104;0.00241746221690833;0.364938131203567</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_118>
+											<I_119>
+												<ID>120</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.519313105865893;0.199625614242586;0.00241791337739674;0.364635479100475</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_119>
+											<I_120>
+												<ID>121</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.58327245303831;0.202513296165386;0.0117063941993426;0.399874984980345</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_120>
+											<I_121>
+												<ID>122</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>4.64608878960078E-8</ErrorAvg>
+												<ErrorMax>4.64608878960078E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.583333326435394;0.202586181519253;0.011724131639647;0.399999962218475</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_121>
+											<I_122>
+												<ID>123</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.557992569479496;0.25725452253956;0.00593071346760717;0.481388551203426</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_122>
+											<I_123>
+												<ID>124</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>1.44346518014776E-8</ErrorAvg>
+												<ErrorMax>1.44346518014776E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.532051282698844;0.313218376697299;6.36785607790107E-11;0.564705885339561</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_123>
+											<I_124>
+												<ID>125</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.502183610060311;0.273047164952676;0.0160675098493729;0.637802500312285</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_124>
+											<I_125>
+												<ID>126</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>1.18682799089563E-7</ErrorAvg>
+												<ErrorMax>1.18682799089563E-7</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.474359054005468;0.235632238972798;0.0310344636099384;0.705882418844468</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_125>
+											<I_126>
+												<ID>127</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.516516547902197;0.180380774955588;0.0770774062428101;0.67314798238011</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_126>
+											<I_127>
+												<ID>128</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>7.34010332666814E-7</ErrorAvg>
+												<ErrorMax>7.34010332666814E-7</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.557692138350561;0.126436515925975;0.122068321033581;0.641176625983793</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_127>
+											<I_128>
+												<ID>129</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>5.87761869528501E-10</ErrorAvg>
+												<ErrorMax>5.87761869528501E-10</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>5.41333557449697E-10;0.580459770064697;6.00706362354976E-24;0.529411764482505</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_128>
+											<I_129>
+												<ID>130</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>1.41670242135264E-5;0.580451839195051;6.74049001393291E-22;0.529409525908181</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_129>
+											<I_130>
+												<ID>131</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.275637473009193;0.301734122693177;4.46482095318114E-27;0.511763603836313</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_130>
+											<I_131>
+												<ID>132</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>3.37456436739322E-9</ErrorAvg>
+												<ErrorMax>3.37456436739322E-9</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.275641027233097;0.301724139708348;1.69436287783297E-59;0.511764703496112</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_131>
+											<I_132>
+												<ID>133</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.304788660187881;0.250185311924197;6.97286272141837E-39;0.443410642866956</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_132>
+											<I_133>
+												<ID>134</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>6.13475857776949E-9</ErrorAvg>
+												<ErrorMax>6.13475857776949E-9</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.333333329679227;0.199712645886986;8.43306798958666E-11;0.37647058383112</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_133>
+											<I_134>
+												<ID>135</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.475231333433513;0.184946706507465;0.011722184475293;0.353219393994544</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_134>
+											<I_135>
+												<ID>136</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.512837368533424;0.181064782935823;0.0148043323852859;0.347088112864193</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_135>
+											<I_136>
+												<ID>137</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.558128242607124;0.154398903908161;0.00685165179610693;0.180495971380895</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_136>
+											<I_137>
+												<ID>138</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.577017852453534;0.179229830593646;0.00594874336956835;0.365227725042745</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_137>
+											<I_138>
+												<ID>139</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.577017777435039;0.179230229364044;0.00594875181889114;0.365228320079042</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_138>
+											<I_139>
+												<ID>140</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.532090304259183;0.31310656200256;8.39833663083399E-6;0.564589559429201</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_139>
+											<I_140>
+												<ID>141</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.535345190665076;0.251940034655039;8.02590812938125E-9;0.5767965558339</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_140>
+											<I_141>
+												<ID>142</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.507298223879957;0.214221685367278;0.015087345346943;0.645429137630189</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_141>
+											<I_142>
+												<ID>143</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.530355340363656;0.160326722002529;0.0416658435202273;0.61218048760071</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_142>
+											<I_143>
+												<ID>144</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.570105236268228;0.108352009674539;0.0880138212004512;0.584222515201163</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_143>
+											<I_144>
+												<ID>145</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.000297033501871279;0.580847650226716;4.56328483729133E-43;0.528748111621252</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_144>
+											<I_145>
+												<ID>146</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.146503382652248;0.445563558699087;2.05253706346195E-54;0.507620120312495</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_145>
+											<I_146>
+												<ID>147</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.275608589567367;0.301703174268177;2.20991581335684E-57;0.51173147933784</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_146>
+											<I_147>
+												<ID>148</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.275093139247629;0.301364944257027;1.50733070172595E-54;0.511196404048506</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_147>
+											<I_148>
+												<ID>149</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.333304321366526;0.199747208934182;1.36131327847235E-27;0.376512314916684</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_148>
+											<I_149>
+												<ID>150</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.370049220845432;0.195892315114152;0.00303325804533539;0.370452129731574</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_149>
+											<I_150>
+												<ID>151</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>5.16384233031316E-8</ErrorAvg>
+												<ErrorMax>5.16384233031316E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.512820464497752;0.18103448291349;0.0148275776400607;0.34705880746632</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_150>
+											<I_151>
+												<ID>152</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.545870289564805;0.157333606727906;0.00860564310562104;0.198453775727575</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_151>
+											<I_152>
+												<ID>153</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.57402747792023;0.144145048648187;0.00151273558527066;0.181058297359304</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_152>
+											<I_153>
+												<ID>154</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>3.43157635239979E-7</ErrorAvg>
+												<ErrorMax>3.43157635239979E-7</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.570512916762953;0.155172722461504;9.1423005710054E-8;0.329411834410455</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_153>
+											<I_154>
+												<ID>155</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.569394476646514;0.154360104587455;3.22569255700715E-5;0.330532395249519</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_154>
+											<I_155>
+												<ID>156</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.538432673677421;0.194486748205326;1.88863713298156E-12;0.58812965573391</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_155>
+											<I_156>
+												<ID>157</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>3.09416350369649E-8</ErrorAvg>
+												<ErrorMax>3.09416350369649E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.53846154039368;0.19396549520045;2.16024821683991E-8;0.588235295204765</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_156>
+											<I_157>
+												<ID>158</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.561691552113069;0.139663621100406;0.0267789066871036;0.55473807138762</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_157>
+											<I_158>
+												<ID>159</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>2.88458751360015E-8</ErrorAvg>
+												<ErrorMax>2.88458751360015E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.583333320995004;0.0890804620312337;0.0517241332684791;0.523529437318533</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_158>
+											<I_159>
+												<ID>160</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.583115882872027;0.0889355266161727;0.0520426180645817;0.523904655883822</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_159>
+											<I_160>
+												<ID>161</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.147170132235182;0.772641457036302;2.73334004487706E-38;0.200593791507856</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_160>
+											<I_161>
+												<ID>162</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.147420754994444;0.772968731108087;1.3158956127743E-48;0.200033833525372</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_161>
+											<I_162>
+												<ID>163</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.0752112103393466;0.424154311553258;5.47815653987836E-48;0.22440433589038</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_162>
+											<I_163>
+												<ID>164</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.000496870097382306;0.123884370075063;5.32192450695468E-55;0.229920722734401</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_163>
+											<I_164>
+												<ID>165</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>7.66319429206752E-5;0.123605463201214;6.81486747265347E-40;0.229424527405325</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_164>
+											<I_165>
+												<ID>166</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.218144005626617;0.247036234118009;1.16377059246388E-20;0.247288445963841</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_165>
+											<I_166>
+												<ID>167</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.370036817050111;0.213037767230279;0.00764772238132345;0.298636234397141</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_166>
+											<I_167>
+												<ID>168</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.559387374979671;0.197876743174001;0.0131823792708096;0.164797099155713</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_167>
+											<I_168>
+												<ID>169</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.589935526609275;0.178806243507203;0.00783347629686537;0.0289715411046339</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_168>
+											<I_169>
+												<ID>170</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.573777527847689;0.144928240968309;0.00140500196885938;0.191603654668359</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_169>
+											<I_170>
+												<ID>171</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.524795307184658;0.117111816682956;2.21375183774104E-8;0.36536895515554</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_170>
+											<I_171>
+												<ID>172</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.480788966345277;0.080496656039948;9.9829596033934E-13;0.400057461455892</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_171>
+											<I_172>
+												<ID>173</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.53845439885984;0.193908065033813;3.84034476518789E-9;0.588176454025524</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_172>
+											<I_173>
+												<ID>174</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.558303245959486;0.1279975327857;1.2381821789808E-8;0.566992997255391</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_173>
+											<I_174>
+												<ID>175</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.580026352711053;0.0772209744083503;0.0250402993325354;0.53566794619326</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_174>
+											<I_175>
+												<ID>176</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.567751570858177;0.0513618481066108;0.0751934858817373;0.512090570414149</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_175>
+											<I_176>
+												<ID>177</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>3.8746579983209E-10</ErrorAvg>
+												<ErrorMax>3.8746579983209E-10</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.147435897296283;0.772988505564731;6.51733141339435E-41;0.200000000312041</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_176>
+											<I_177>
+												<ID>178</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.147430784247703;0.772966010721983;3.2348065072755E-43;0.200001038115028</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_177>
+											<I_178>
+												<ID>179</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>4.39267983159506E-6;0.123582577923931;2.57396277507806E-39;0.229410896123243</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_178>
+											<I_179>
+												<ID>180</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>9.48527034600003E-9</ErrorAvg>
+												<ErrorMax>9.48527034600003E-9</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>8.23104498454712E-9;0.12356322305729;5.17734444855035E-33;0.229411765372341</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_179>
+											<I_180>
+												<ID>181</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.105243036024637;0.183229401351133;1.25206898952603E-23;0.237933173956552</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_180>
+											<I_181>
+												<ID>182</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>6.88795172656935E-9</ErrorAvg>
+												<ErrorMax>6.88795172656935E-9</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.217948723926089;0.247126433544787;8.23055353578394E-11;0.247058824638972</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_181>
+											<I_182>
+												<ID>183</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.412275890358023;0.234058640283543;0.00644640335571694;0.122238155585884</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_182>
+											<I_183>
+												<ID>184</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>3.44761721569645E-5</ErrorAvg>
+												<ErrorMax>3.44761721569645E-5</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.602555912174878;0.221236831162666;0.0127554264378577;1.87897164556982E-5</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_183>
+											<I_184>
+												<ID>185</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>3.31160495216354E-5</ErrorAvg>
+												<ErrorMax>3.31160495216354E-5</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.57693094419366;0.135083921572655;0.00276168892518179;0.0588054809793738</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_184>
+											<I_185>
+												<ID>186</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.481106971365971;0.0806523591195921;9.61067880219849E-6;0.398809724025626</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_185>
+											<I_186>
+												<ID>187</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>1.60664266595582E-8</ErrorAvg>
+												<ErrorMax>1.60664266595582E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.480769241343659;0.0804597789412154;1.07417849222824E-12;0.399999991729061</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_186>
+											<I_187>
+												<ID>188</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.480787905006606;0.0804958299025234;8.18097446074149E-8;0.400060288313556</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_187>
+											<I_188>
+												<ID>189</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.57673862616725;0.0667081291377705;3.46440628316583E-6;0.547255147041458</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_188>
+											<I_189>
+												<ID>190</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>3.0684118272269E-8</ErrorAvg>
+												<ErrorMax>3.0684118272269E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.576923077947738;0.0660919710884912;2.39110957237728E-8;0.547058814726384</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_189>
+											<I_190>
+												<ID>191</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.564253297311332;0.0391142974103213;0.0494140807990114;0.523805158967727</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_190>
+											<I_191>
+												<ID>192</ID>
+												<CaseCount>1</CaseCount>
+												<ErrorAvg>4.5560940334035E-8</ErrorAvg>
+												<ErrorMax>4.5560940334035E-8</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.551282065244416;0.0114942862027432;0.099999975020462;0.500000012084705</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.19 23:49:06</StartTime>
+													<StopTime>2025.11.19 23:49:06</StopTime>
+													<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_191>
+										</Nodes>
+										<InputsMin>
+											<Count>4</Count>
+										</InputsMin>
+										<InputsMax>
+											<Count>4</Count>
+											<Values>1;1;1;1</Values>
+										</InputsMax>
+										<OutputsMin/>
+										<OutputsMax/>
+										<ClusterID>
+											<Count>192</Count>
+											<Values>4;4;2;5;5;5;5;5;1;1;0;0;0;0;0;0;4;2;2;5;5;5;5;1;1;1;0;0;0;0;0;0;4;2;2;2;5;5;1;1;1;1;0;0;0;0;0;0;3;2;2;2;5;5;1;1;1;1;0;0;0;0;0;0;3;3;6;6;1;1;1;1;1;1;1;0;0;0;0;0;3;6;6;7;1;1;1;1;1;1;0;0;0;0;0;0;6;6;6;6;1;1;1;1;1;1;1;1;0;0;0;0;6;6;7;7;7;7;1;1;1;1;1;1;0;0;0;0;6;6;7;7;7;7;1;1;5;1;1;1;1;0;1;1;6;6;7;7;7;7;1;5;5;1;1;1;1;1;1;1;6;6;6;7;7;7;7;5;5;5;1;1;1;1;1;1;6;6;7;7;7;7;5;5;5;1;1;1;1;1;1;1</Values>
+										</ClusterID>
+										<Clusters>
+											<Count>8</Count>
+											<I_0>
+												<ID>1</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.65365834705288;0.202982130142086;0.0919829429568977;0.770555562529316</Values>
+												</InputWeights>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.551902430534106;0.170070320149588;0.0546233060961382;0.431775024087241</Values>
+												</InputWeights>
+											</I_1>
+											<I_2>
+												<ID>3</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.546949278867775;0.635962532636616;0.325078208295077;0.511295717739965</Values>
+												</InputWeights>
+											</I_2>
+											<I_3>
+												<ID>4</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.397438890659676;0.431073204855359;0.535379747259171;0.511753118824965</Values>
+												</InputWeights>
+											</I_3>
+											<I_4>
+												<ID>5</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.465288320661146;0.9327812894912;0.945069489862653;0.485831132226123</Values>
+												</InputWeights>
+											</I_4>
+											<I_5>
+												<ID>6</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.617075299379529;0.302064975281133;0.0633097859961743;0.226381813280109</Values>
+												</InputWeights>
+											</I_5>
+											<I_6>
+												<ID>7</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.185145465570301;0.562549278113121;0.0159748943427479;0.415022083186746</Values>
+												</InputWeights>
+											</I_6>
+											<I_7>
+												<ID>8</ID>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.242830792665209;0.229130257033097;0.000508635584122913;0.376920458882356</Values>
+												</InputWeights>
+											</I_7>
+										</Clusters>
+									</Kernel>
+								</AnalyticEngine>
+								<TeachDataSource>
+									<StartTime>2025.11.19 23:51:44</StartTime>
+									<StopTime>2025.11.19 23:51:44</StopTime>
+									<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+									<DataSourceTypeSet>[dstTeach,dstTest]</DataSourceTypeSet>
+									<SplitType>stRandom</SplitType>
+									<dstTeach>
+										<PercentOfDataSource>100</PercentOfDataSource>
+										<SortOrder>tsoAsc</SortOrder>
+										<SplitOrder>dstTeach</SplitOrder>
+										<Index>
+											<Count>44</Count>
+											<Values>27;33;4;10;22;29;36;9;19;39;16;34;5;11;23;32;1;3;7;15;31;0;2;6;14;30;41;20;42;21;43;24;37;12;26;28;25;40;17;35;8;18;38;13</Values>
+										</Index>
+									</dstTeach>
+									<dstTest>
+										<SortOrder>tsoAsc</SortOrder>
+										<SplitOrder>dstTest</SplitOrder>
+										<Index/>
+									</dstTest>
+								</TeachDataSource>
+								<Teacher>
+									<ElapsedTime>188</ElapsedTime>
+									<StartTime>2025.11.19 23:51:44</StartTime>
+									<StopTime>2025.11.19 23:51:44</StopTime>
+									<ElapsedTimeFmt>00:00:00.188</ElapsedTimeFmt>
+									<StoppedOnCondition>1</StoppedOnCondition>
+									<StoppedByUser>1</StoppedByUser>
+									<State>tstFinished</State>
+									<CurrentEpoch>499</CurrentEpoch>
+									<MaxEpochCount>500</MaxEpochCount>
+									<SOMRadiusBegin>4</SOMRadiusBegin>
+									<Errors>
+										<RecognitionErr>0.05</RecognitionErr>
+										<dstTeach>
+											<Rows>44</Rows>
+											<Recog>44</Recog>
+											<Avg>5.15484329681762E-6</Avg>
+											<Max>7.99437021940905E-5</Max>
+										</dstTeach>
+										<dstTest>
+											<Max>-1.7E308</Max>
+										</dstTest>
+									</Errors>
+									<StopConditions>
+										<StopCondition>[tecEpochCount]</StopCondition>
+										<dstTeach>
+											<AvgError>0.05</AvgError>
+											<MaxError>0.05</MaxError>
+											<PercentRecognized>100</PercentRecognized>
+										</dstTeach>
+										<dstTest>
+											<AvgError>0.05</AvgError>
+											<MaxError>0.05</MaxError>
+											<PercentRecognized>100</PercentRecognized>
+										</dstTest>
+									</StopConditions>
+									<TeachIntervals>
+										<Count>1</Count>
+										<EpochCount>500</EpochCount>
+										<I_0>
+											<ID>1</ID>
+											<EpochCount>500</EpochCount>
+											<RadiusBegin>4</RadiusBegin>
+											<RadiusEnd>0.1</RadiusEnd>
+											<RadiusModification>pmtBackProportional</RadiusModification>
+											<RateBegin>0.3</RateBegin>
+											<RateEnd>0.005</RateEnd>
+											<RateModification>pmtBackProportional</RateModification>
+										</I_0>
+									</TeachIntervals>
+								</Teacher>
+								<Random>
+									<RandSeed>-1973942636</RandSeed>
+								</Random>
+							</Component>
+							<Views>
+								<Count>1</Count>
+								<I_0>
+									<ID>1</ID>
+									<Name>TBGSOMViewsFormVendor</Name>
+									<VendorName>TBGSOMViewsFormVendor</VendorName>
+									<GradientColorType>gctRGBColor</GradientColorType>
+									<ViewClassTypeSet>[svcUMatrix,svcCluster]</ViewClassTypeSet>
+									<ClustersBorders>1</ClustersBorders>
+									<BrowseFormShow>1</BrowseFormShow>
+									<InputColumnsSet>
+										<Size>4</Size>
+										<Indexes>
+											<Count>5</Count>
+											<Values>0;1;2;3</Values>
+										</Indexes>
+									</InputColumnsSet>
+									<OutputColumnsSet/>
+									<Interlayer>
+										<CurrentNode>45</CurrentNode>
+										<ViewMode>[swmSimple]</ViewMode>
+										<WorkMode>swmSimple</WorkMode>
+										<SelectedNodes/>
+										<Contour>
+											<Items/>
+										</Contour>
+									</Interlayer>
+									<BrowseForm>
+										<BrowseColumns>
+											<Columns>
+												<Count>9</Count>
+												<I_0>
+													<ID>1</ID>
+													<Name>COL1</Name>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtString</DataType>
+													<Width>128</Width>
+												</I_0>
+												<I_1>
+													<ID>2</ID>
+													<Name>COL2</Name>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtFloat</DataType>
+													<Alignment>taRightJustify</Alignment>
+													<Width>80</Width>
+												</I_1>
+												<I_2>
+													<ID>3</ID>
+													<Name>COL3</Name>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtFloat</DataType>
+													<Alignment>taRightJustify</Alignment>
+													<Width>80</Width>
+												</I_2>
+												<I_3>
+													<ID>4</ID>
+													<Name>COL4</Name>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtFloat</DataType>
+													<Alignment>taRightJustify</Alignment>
+													<Width>96</Width>
+												</I_3>
+												<I_4>
+													<ID>5</ID>
+													<Name>COL5</Name>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtFloat</DataType>
+													<Alignment>taRightJustify</Alignment>
+													<Width>80</Width>
+												</I_4>
+												<I_5>
+													<ID>6</ID>
+													<Name>SOMCELLNUMBER</Name>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtInteger</DataType>
+													<Alignment>taRightJustify</Alignment>
+													<Width>96</Width>
+												</I_5>
+												<I_6>
+													<ID>7</ID>
+													<Name>SOMCELLDISTANCE</Name>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtFloat</DataType>
+													<Alignment>taRightJustify</Alignment>
+													<Width>216</Width>
+												</I_6>
+												<I_7>
+													<ID>8</ID>
+													<Name>SOMCLUSTERNUMBER</Name>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtInteger</DataType>
+													<Alignment>taRightJustify</Alignment>
+													<Width>112</Width>
+												</I_7>
+												<I_8>
+													<ID>9</ID>
+													<Name>SOMCLUSTERDISTANCE</Name>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtFloat</DataType>
+													<Alignment>taRightJustify</Alignment>
+													<Width>232</Width>
+												</I_8>
+											</Columns>
+										</BrowseColumns>
+										<FilterColumns/>
+										<VirtualDataSet>
+											<SortComponent>
+												<StartTime>2025.11.20 00:06:34</StartTime>
+												<StopTime>2025.11.20 00:06:34</StopTime>
+												<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
+												<Count>1</Count>
+												<I_0>
+													<ID>1</ID>
+													<Name>COL2</Name>
+													<DisplayName>Оплата</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsInput</DataStatus>
+													<DataType>dtFloat</DataType>
+													<SortOrder>soDesc</SortOrder>
+												</I_0>
+											</SortComponent>
+										</VirtualDataSet>
+										<Statistics>
+											<Histogram>1</Histogram>
+											<StatMin>1</StatMin>
+											<StatMax>1</StatMax>
+											<StatAvg>1</StatAvg>
+											<StatStdDev>1</StatStdDev>
+											<StatSum>1</StatSum>
+											<StatSumSq>1</StatSumSq>
+											<StatUnique>1</StatUnique>
+											<StatNull>1</StatNull>
+											<StatColumns>
+												<Columns>
+													<Count>9</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL1</Name>
+														<DataStatus>dsInfo</DataStatus>
+														<DataType>dtString</DataType>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL2</Name>
+														<DataStatus>dsInfo</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<Name>COL3</Name>
+														<DataStatus>dsInfo</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<Name>COL4</Name>
+														<DataStatus>dsInfo</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_3>
+													<I_4>
+														<ID>5</ID>
+														<Name>COL5</Name>
+														<DataStatus>dsInfo</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_4>
+													<I_5>
+														<ID>6</ID>
+														<Name>SOMCELLNUMBER</Name>
+														<DataStatus>dsInfo</DataStatus>
+														<DataType>dtInteger</DataType>
+													</I_5>
+													<I_6>
+														<ID>7</ID>
+														<Name>SOMCELLDISTANCE</Name>
+														<DataStatus>dsInfo</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_6>
+													<I_7>
+														<ID>8</ID>
+														<Name>SOMCLUSTERNUMBER</Name>
+														<DataStatus>dsInfo</DataStatus>
+														<DataType>dtInteger</DataType>
+													</I_7>
+													<I_8>
+														<ID>9</ID>
+														<Name>SOMCLUSTERDISTANCE</Name>
+														<DataStatus>dsInfo</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_8>
+												</Columns>
+											</StatColumns>
+										</Statistics>
+									</BrowseForm>
+								</I_0>
+							</Views>
+						</I_0>
+					</SubNodes>
+				</I_0>
+			</SubNodes>
+		</Root>
+	</Script>
+	<ModelBookmarks/>
+</Document>
