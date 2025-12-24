@@ -1,0 +1,703 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2025/1/ontology/NFT_Art"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2025/1/ontology/NFT_Art"
+     versionIRI="http://www.semanticweb.org/user/ontologies/2025/1/ontology/NFT_Art/1.0">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2025/1/ontology/NFT_Art/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Онтология для предметной области "Цифровое искусство и NFT"</Literal>
+    </Annotation>
+    
+    <!-- Декларации классов для РИСУНОК 1: Иерархия класса «Цифровой актив» -->
+    <Declaration>
+        <Class IRI="#DigitalAsset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NFT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PixelArt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VectorGraphics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3DModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlitchArt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fantasy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SciFi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Portrait"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Landscape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Abstract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndividualArtist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CollectiveArtist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThematicCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AuthorCollection"/>
+    </Declaration>
+    
+    <!-- Декларации классов для РИСУНОК 2: Иерархия класса «Атрибуты» -->
+    <Declaration>
+        <Class IRI="#Attributes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TechnicalAttributes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContentAttributes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalAttributes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FileFormat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FileSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtStyle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColorPalette"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LicenseType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RightsLevel"/>
+    </Declaration>
+    
+    <!-- Декларации объектных свойств -->
+    <Declaration>
+        <ObjectProperty IRI="#hasFormat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFileSize"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArtStyle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasColorPalette"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLicense"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRightsLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createdBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfCollection"/>
+    </Declaration>
+    
+    <!-- Декларации именованных индивидов (экземпляров) -->
+    <Declaration>
+        <NamedIndividual IRI="#Punk7523"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Everydays_First_5000_Days"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CryptoKitties_Gen0_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beeple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LarvaLabs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CryptoPunks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PNG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GIF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MP4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GLB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Small"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Large"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NeoFuturism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Surrealism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Minimalism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monochrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pastel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Contrast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CC_BY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CC_BY_NC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CC0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Proprietary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ViewOnly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PersonalUse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CommercialUse"/>
+    </Declaration>
+    
+    <!-- Иерархия классов для РИСУНОК 1 -->
+    <SubClassOf>
+        <Class IRI="#NFT"/>
+        <Class IRI="#DigitalAsset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artist"/>
+        <Class IRI="#DigitalAsset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collection"/>
+        <Class IRI="#DigitalAsset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PixelArt"/>
+        <Class IRI="#NFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VectorGraphics"/>
+        <Class IRI="#NFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3DModel"/>
+        <Class IRI="#NFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlitchArt"/>
+        <Class IRI="#NFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fantasy"/>
+        <Class IRI="#NFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SciFi"/>
+        <Class IRI="#NFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Portrait"/>
+        <Class IRI="#NFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Landscape"/>
+        <Class IRI="#NFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Abstract"/>
+        <Class IRI="#NFT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualArtist"/>
+        <Class IRI="#Artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollectiveArtist"/>
+        <Class IRI="#Artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThematicCollection"/>
+        <Class IRI="#Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AuthorCollection"/>
+        <Class IRI="#Collection"/>
+    </SubClassOf>
+    
+    <!-- Иерархия классов для РИСУНОК 2 -->
+    <SubClassOf>
+        <Class IRI="#TechnicalAttributes"/>
+        <Class IRI="#Attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContentAttributes"/>
+        <Class IRI="#Attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalAttributes"/>
+        <Class IRI="#Attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FileFormat"/>
+        <Class IRI="#TechnicalAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FileSize"/>
+        <Class IRI="#TechnicalAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArtStyle"/>
+        <Class IRI="#ContentAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColorPalette"/>
+        <Class IRI="#ContentAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LicenseType"/>
+        <Class IRI="#LegalAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RightsLevel"/>
+        <Class IRI="#LegalAttributes"/>
+    </SubClassOf>
+    
+    <!-- Непересекающиеся классы -->
+    <DisjointClasses>
+        <Class IRI="#PixelArt"/>
+        <Class IRI="#VectorGraphics"/>
+        <Class IRI="#3DModel"/>
+        <Class IRI="#GlitchArt"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fantasy"/>
+        <Class IRI="#SciFi"/>
+        <Class IRI="#Portrait"/>
+        <Class IRI="#Landscape"/>
+        <Class IRI="#Abstract"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IndividualArtist"/>
+        <Class IRI="#CollectiveArtist"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ThematicCollection"/>
+        <Class IRI="#AuthorCollection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NFT"/>
+        <Class IRI="#Artist"/>
+        <Class IRI="#Collection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TechnicalAttributes"/>
+        <Class IRI="#ContentAttributes"/>
+        <Class IRI="#LegalAttributes"/>
+    </DisjointClasses>
+    
+    <!-- Утверждения классов для индивидов NFT -->
+    <ClassAssertion>
+        <Class IRI="#PixelArt"/>
+        <NamedIndividual IRI="#Punk7523"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#3DModel"/>
+        <NamedIndividual IRI="#Everydays_First_5000_Days"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VectorGraphics"/>
+        <NamedIndividual IRI="#CryptoKitties_Gen0_1"/>
+    </ClassAssertion>
+    
+    <!-- Утверждения классов для индивидов Artist -->
+    <ClassAssertion>
+        <Class IRI="#IndividualArtist"/>
+        <NamedIndividual IRI="#Beeple"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CollectiveArtist"/>
+        <NamedIndividual IRI="#LarvaLabs"/>
+    </ClassAssertion>
+    
+    <!-- Утверждения классов для индивидов Collection -->
+    <ClassAssertion>
+        <Class IRI="#ThematicCollection"/>
+        <NamedIndividual IRI="#CryptoPunks"/>
+    </ClassAssertion>
+    
+    <!-- Утверждения классов для индивидов атрибутов -->
+    <ClassAssertion>
+        <Class IRI="#FileFormat"/>
+        <NamedIndividual IRI="#PNG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FileFormat"/>
+        <NamedIndividual IRI="#GIF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FileFormat"/>
+        <NamedIndividual IRI="#MP4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FileFormat"/>
+        <NamedIndividual IRI="#GLB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FileSize"/>
+        <NamedIndividual IRI="#Small"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FileSize"/>
+        <NamedIndividual IRI="#Medium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FileSize"/>
+        <NamedIndividual IRI="#Large"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ArtStyle"/>
+        <NamedIndividual IRI="#NeoFuturism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ArtStyle"/>
+        <NamedIndividual IRI="#Surrealism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ArtStyle"/>
+        <NamedIndividual IRI="#Minimalism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ColorPalette"/>
+        <NamedIndividual IRI="#Monochrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ColorPalette"/>
+        <NamedIndividual IRI="#Pastel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ColorPalette"/>
+        <NamedIndividual IRI="#Contrast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LicenseType"/>
+        <NamedIndividual IRI="#CC_BY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LicenseType"/>
+        <NamedIndividual IRI="#CC_BY_NC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LicenseType"/>
+        <NamedIndividual IRI="#CC0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LicenseType"/>
+        <NamedIndividual IRI="#Proprietary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RightsLevel"/>
+        <NamedIndividual IRI="#ViewOnly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RightsLevel"/>
+        <NamedIndividual IRI="#PersonalUse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RightsLevel"/>
+        <NamedIndividual IRI="#CommercialUse"/>
+    </ClassAssertion>
+    
+    <!-- Утверждения объектных свойств для Punk7523 -->
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormat"/>
+        <NamedIndividual IRI="#Punk7523"/>
+        <NamedIndividual IRI="#PNG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFileSize"/>
+        <NamedIndividual IRI="#Punk7523"/>
+        <NamedIndividual IRI="#Small"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasArtStyle"/>
+        <NamedIndividual IRI="#Punk7523"/>
+        <NamedIndividual IRI="#Minimalism"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColorPalette"/>
+        <NamedIndividual IRI="#Punk7523"/>
+        <NamedIndividual IRI="#Monochrome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLicense"/>
+        <NamedIndividual IRI="#Punk7523"/>
+        <NamedIndividual IRI="#CC0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRightsLevel"/>
+        <NamedIndividual IRI="#Punk7523"/>
+        <NamedIndividual IRI="#CommercialUse"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#createdBy"/>
+        <NamedIndividual IRI="#Punk7523"/>
+        <NamedIndividual IRI="#LarvaLabs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOfCollection"/>
+        <NamedIndividual IRI="#Punk7523"/>
+        <NamedIndividual IRI="#CryptoPunks"/>
+    </ObjectPropertyAssertion>
+    
+    <!-- Утверждения объектных свойств для Everydays_First_5000_Days -->
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormat"/>
+        <NamedIndividual IRI="#Everydays_First_5000_Days"/>
+        <NamedIndividual IRI="#MP4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFileSize"/>
+        <NamedIndividual IRI="#Everydays_First_5000_Days"/>
+        <NamedIndividual IRI="#Large"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasArtStyle"/>
+        <NamedIndividual IRI="#Everydays_First_5000_Days"/>
+        <NamedIndividual IRI="#Surrealism"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColorPalette"/>
+        <NamedIndividual IRI="#Everydays_First_5000_Days"/>
+        <NamedIndividual IRI="#Contrast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLicense"/>
+        <NamedIndividual IRI="#Everydays_First_5000_Days"/>
+        <NamedIndividual IRI="#Proprietary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRightsLevel"/>
+        <NamedIndividual IRI="#Everydays_First_5000_Days"/>
+        <NamedIndividual IRI="#ViewOnly"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#createdBy"/>
+        <NamedIndividual IRI="#Everydays_First_5000_Days"/>
+        <NamedIndividual IRI="#Beeple"/>
+    </ObjectPropertyAssertion>
+    
+    <!-- Домены объектных свойств -->
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormat"/>
+        <Class IRI="#NFT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFileSize"/>
+        <Class IRI="#NFT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasArtStyle"/>
+        <Class IRI="#NFT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasColorPalette"/>
+        <Class IRI="#NFT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLicense"/>
+        <Class IRI="#NFT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRightsLevel"/>
+        <Class IRI="#NFT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createdBy"/>
+        <Class IRI="#NFT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfCollection"/>
+        <Class IRI="#NFT"/>
+    </ObjectPropertyDomain>
+    
+    <!-- Диапазоны объектных свойств -->
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFormat"/>
+        <Class IRI="#FileFormat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFileSize"/>
+        <Class IRI="#FileSize"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasArtStyle"/>
+        <Class IRI="#ArtStyle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasColorPalette"/>
+        <Class IRI="#ColorPalette"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLicense"/>
+        <Class IRI="#LicenseType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRightsLevel"/>
+        <Class IRI="#RightsLevel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createdBy"/>
+        <Class IRI="#Artist"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfCollection"/>
+        <Class IRI="#Collection"/>
+    </ObjectPropertyRange>
+    
+    <!-- Аннотации на русском языке -->
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DigitalAsset</IRI>
+        <Literal>Цифровой актив</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NFT</IRI>
+        <Literal>NFT-токен</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Artist</IRI>
+        <Literal>Художник</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Collection</IRI>
+        <Literal>Коллекция</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PixelArt</IRI>
+        <Literal>Пиксель-арт</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VectorGraphics</IRI>
+        <Literal>Векторная графика</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#3DModel</IRI>
+        <Literal>3D-модель</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GlitchArt</IRI>
+        <Literal>Глитч-арт</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fantasy</IRI>
+        <Literal>Фэнтези</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SciFi</IRI>
+        <Literal>Научная фантастика</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Portrait</IRI>
+        <Literal>Портрет</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Landscape</IRI>
+        <Literal>Пейзаж</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Abstract</IRI>
+        <Literal>Абстракция</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IndividualArtist</IRI>
+        <Literal>Индивидуальный художник</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CollectiveArtist</IRI>
+        <Literal>Коллективный художник</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ThematicCollection</IRI>
+        <Literal>Тематическая коллекция</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AuthorCollection</IRI>
+        <Literal>Авторская коллекция</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Attributes</IRI>
+        <Literal>Атрибуты</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
